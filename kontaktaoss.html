@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +21,9 @@
             <h3 class="header2sendmail">Skicka ett mail med din fråga!</h3>
         </section><!--här slutar section-->
 
-        <form> <!--här börjar form där användaren kan skriva sitt namn, e-post och meddelande till oss. Då sidan inte har en mailadress så finns det ingen "action"-->
+        <form onsubmit="verificationMessage()"> 
+            <!--här börjar form där användaren kan skriva sitt namn, e-post och meddelande till oss. Då sidan inte har en mailadress så finns det ingen "action" -->
+            <!--Har även lagt in onsubmit och använt mig av javascript för att användaren ska få ett meddelande när hen skickar iväg sitt mail-->
             <label for="name">Namn:</label><br>
             <input type="name" id="name" name="Namn"><br>
             <label for="email">E-post:</label><br>
@@ -37,12 +37,13 @@
     </div>
 
 
-    <footer class="buttonfrontpagecontactus"> <!--Sidans rosa bakgrundsfärg i footern-->
+    <footer class="backgroundfootercontactus"> <!--Sidans rosa bakgrundsfärg i footern-->
         <div class="footerbuttoncontactus"> <!--längst ner på sidan där jag lägger in knappen till startsidan-->
             <button><a href="index.html">Till startsidan</a></button>
         </div>
     </footer> <!--här slutar footern-->
 
-</body>
+<script src="javascript.js"></script> <!--Länken till javascript-filen-->
 
+</body>
 </html>

@@ -1,189 +1,262 @@
 * {
-    font-family: Futura;
+  font-family: Futura;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-  
+
 .backgroundheader {
-    width: 100%;
-    background: rgba(250, 202, 202, 0.19);
+  width: 100%;
+  background: rgba(250, 202, 202, 0.19);
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0;
 }
 
 .rubrik1 {
-    text-align: center;
-    font-family: Futura;
-    font-weight: bold;
-    font-size: 70px;
-    height: 100%;
-    padding: 25px 0px 25px 0px;
-    margin-top: 0px;
-    text-shadow: 1px 1px;
+  text-align: center;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 70px;
+  height: 100%;
+  padding: 25px 0px 25px 0px;
+  margin-top: 0px;
+  text-shadow: 1px 1px;
 }
 
 .box1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 100px;
 }
 
 .text1 {
-    font-size: 32px;
-    float: right;
-    inline-size: 250px;
-   font-family: 'Prata', serif;
-   margin-top: 50px;
+  font-size: 32px;
+  float: right;
+  inline-size: 250px;
+  font-family: "Prata", serif;
+  margin-top: 50px;
   line-height: 46px;
 }
 
 .buttonstads {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 70px;
-    outline: none;
-   height: 400px;
-   margin-top: 40px;
-   margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 70px;
+  outline: none;
+  height: 400px;
+  margin-top: 40px;
+  margin-right: 25px;
 }
 
 button {
-    height: 70px;
-    border: 1.5px solid rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    background-color: white;
-    padding: 16px;
-
-    height: 45px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: 0,5px;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 button:hover {
-    box-shadow: 0px 15px 20px rgba(250, 202, 202, 0.6);
-    color: #fff;
-    transform: translateY(-7px);
-  }
+  box-shadow: 0px 15px 20px rgba(250, 202, 202, 0.6);
+  color: #fff;
+  transform: translateY(-7px);
+}
 
 .picture1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  width: 42%;
 }
 
-.footerbuttonfrontpage{
-height: 90px;
-background: rgba(250, 202, 202, 0.19);
-margin-top: 50px;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-padding-left: 20px;
-padding-right: 20px;
+#yummytext {
+  text-align: center;
+  margin-top: 30px;
+  visibility: hidden;
 }
 
-.footerbuttondistrictpage{
-height: 90px;
-background: rgba(250, 202, 202, 0.19);
-margin-top: 50px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-left: 20px;
-padding-right: 20px;
+.footerbuttonfrontpage {
+  height: 90px;
+  background: rgba(250, 202, 202, 0.19);
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.footerbuttoncontactus{
-height: 90px;
-background: rgba(250, 202, 202, 0.19);
-margin-top: 50px;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-padding-left: 20px;
-padding-right: 20px;
+.footerbuttondistrictpage {
+  height: 90px;
+  background: rgba(250, 202, 202, 0.19);
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.backgroundfooter{
-    width: 100%;
-    height: 90px;
+.footerbuttoncontactus {
+  height: 90px;
+  background: rgba(250, 202, 202, 0.19);
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.backgroundfooter {
+  width: 100%;
+  height: 90px;
+  margin-top: 10%;
+}
+
+.email {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  outline: none;
+}
+
+.sendbutton {
+  margin-left: 145px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+
+.headercontactus {
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 80px;
+}
+
+.header2sendmail {
+  font-size: 30px;
+}
+
+.headerdistrict {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.cafe {
+  font-size: 35px;
+  text-align: center;
+}
+
+.breakfast-brunch {
+  font-size: 25px;
+  text-align: center;
+}
+
+.address {
+  font-size: 20px;
+  text-align: center;
+}
+
+.website {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#ifelse {
+  font-size: 20px;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .buttonstads {
+    margin-left: 2cm;
+    margin-top: 5px;
+  }
+
+  .picture1 {
+    height: 70%;
+    margin-top: 2cm;
+  }
+
+  .text1 {
+    text-align: center;
+  }
+
+  .backgroundfooter {
+    margin-top: 0px;
     margin-top: 50px;
-    margin-top: 10%;
+    width: 100%;
+    height: 20px;
+    margin-top: 20%;
+  }
+
+  .backgroundfootercontactus {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    margin-top: 23%;
+  }
 }
 
-.email{
-    display: flex;
+@media screen and (max-width: 600px) {
+  .buttonstads {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-right: 1.5cm;
+  }
+
+  .text1 {
     text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: auto;
-    outline: none;
-}
+    margin-left: 20px;
+  }
 
-.sendbutton{ 
-margin-left: 145px;
-border: 1px solid black;
-background-color: white;
-font-size: 15px;
-margin-bottom: 20px;
-margin-bottom: 100px;
-}
+  .picture1 {
+    margin-left: 25px;
+  }
 
-.headercontactus{
-font-size: 50px;
-margin-top: 5px;
-margin-bottom: 80px;
-}
-
-.header2sendmail{
-    font-size: 30px;
-}
-
-.headerdistrict{
+  .rubrik1 {
     font-size: 50px;
-    text-align: center;
-    margin-bottom: 70px;
+  }
 }
 
-.cafe{
+@media screen and (max-width: 280px) {
+  .headerdistrict {
     font-size: 35px;
-    text-align: center;
-}
+  }
 
-.breakfast-brunch{
-    font-size: 25px;
-    text-align: center;
-}
+  .cafe {
+    font-size: 28px;
+  }
 
-.address{
-    font-size: 20px;
-    text-align: center;
-}
+  .website {
+    font-size: 17px;
+  }
 
-.website{
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 70px;
+  .rubrik1 {
+    font-size: 40px;
+  }
 }

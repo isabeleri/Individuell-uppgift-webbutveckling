@@ -11,12 +11,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+<!--WCAG- två riktlinjer.
+1.4.11 (AA) ”Använd tillräckliga kontraster i komponenter och grafik”. 
+Jag har valt att göra bakgrundsfärgen i knapparna på hemsidan vit för att knapparna och kontrasten mellan 
+texten på knappen och bakgrundsfärgen ska vara ännu tydligare. Detta för att istället låta knapparnas bakgrund 
+vara rosa som bakgrunden, då kontrasten försämras.
+
+2) 3.2.3 (AA) ”Var konsekvent i navigationen, struktur och utformning”. 
+Jag har valt att vara konsekvent i navigationen, struktur och utformning, ex om man ser till samtliga sidor 
+på hemsidan så har alla lika dan header (samma text och färg på bakgrunden) och samtliga knappar på hemsidan 
+har samma utseende och typsnitt. Även footern ser lika dan ut på samtliga sidor med storlek på bakgrunden på 
+footern och att samtliga sidor på hemsidan har samma rosa färg. Även att ”Till startsidan”-knappen ligger 
+på samma ställe på samtliga sidor (förutom på förstasidan) och den ligger då alltid nere till vänster. 
+”Kontakta oss”-knappen ligger nere till höger på samtliga sidor (förutom när man är inne på kontakta oss sidan).-->
+ 
 </head>
 <body>
 
   <header class="backgroundheader"> <!--Sidans rosa bakgrundsfärg i headern -->
     <h1 class="rubrik1">Frukost & Brunch i Stockholm</h1> <!--sidans huvudrubrik-->
   </header> <!--Här slutar headern-->
+
+  <h2><If-Statement></h2>
+    <p id="ifelse"></p>
 
   <div class="box1"> <!--Här börjar en flexbox-->
     <section class="buttonstads"> <!--här börjar section där jag lägger knappar som leder in till lista med matställen på ex kungsholmen och en bild-->
@@ -26,12 +44,15 @@
       <button><a href="ostermalm.html">Östermalm</a></button>
     </section> <!--Här slutar section-->
 
-    <img src="pictures/picture1.png" alt="picture1"> <!--Bilden på maten som är centrerad på första sidan-->
+    <img src="pictures/picture1.png" class="picture1" onmouseover="showYummy()" onmouseout="hideYummy()"> 
+    <!--Bilden på maten som är centrerad på första sidan + class som jag behöver för att kunna visa och dölja text som kommer fram när man hovrar över bilden med musen, med hjälp av javascript -->  
 
   <aside> <!--här börjar aside där jag lägger in en text om hemsidans syfte-->
       <div class="text1">Vi har här listat Stockholms innerstads frukost- och brunchställen - så att du inte ska missa någon!</div>
-  </div><!--här slutar flexboxen-->
   </aside><!--här slutar aside, där jag la in en text om hemsidans syfte-->
+  </div><!--här slutar flexboxen-->
+
+<h2 id="yummytext">Yummy! 😋</h2> <!--Här har jag lagt in en text som dyker upp när musen hovrar över bilden med hjälp av javascript-->
 
   <footer class="backgroundfooter"> <!--Sidans rosa bakgrundsfärg i footern-->
     <div class="footerbuttonfrontpage"> 
@@ -39,5 +60,7 @@
     </div>
   </footer> <!--här slutar footern-->
 
+
+  <script src="javascript.js"></script> <!--Länk till javascript-filen-->
 </body>
 </html>
